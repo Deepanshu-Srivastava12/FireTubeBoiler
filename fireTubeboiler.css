@@ -1,0 +1,130 @@
+@CHARSET "ISO-8859-1";
+body
+{
+	
+}hr
+{
+	color:black;
+}
+.title
+{
+	font-family:impact; color:green; font-size:35px;
+}
+.footer
+{
+	background-color:maroon; color:white;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: blue;
+}
+.avatar1{
+	  position:obsolute;
+      top: 8px;
+      left: 16px;
+      width:20px;
+      height: 10px;
+     transform: translate(2000%, -4000%);
+     background-position: center;
+	
+	}
+		
+		.avatar1::before,
+		.avatar1::after{
+		position:absolute;
+		content:'';
+		top:-.25rem;
+		height:50px;
+		width:50px;
+		blacground-color:green;
+		
+		
+		}
+		
+	.avatar1:hover::AFTER{
+	content:attr(data-tooltip);
+	
+	}
+	
+.avatar2{position:obsolute;
+      top: 8px;
+      left: 16px;
+      width:20px;
+      height: 10px;
+     transform: translate(3200%, -4000%);
+     background-position: center;
+	background-color: red;
+	}
+.avatar2:hover::AFTER{
+	content:attr(data-tooltip1);
+	
+	}
+	
+
+.avatar{
+	width:600;
+	height:450;
+	background-image: url('firetubeboiler.jpg');
+	background-position: center;
+	}
+	
+	.avatar:hover::AFTER{
+	content:attr(data-tooltip);
+	
+	}
+	
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.tri{
+	width:0px;
+	height:0px;
+	background-color:transparent;
+	border-top:30px solid green;
+	border-right:30px solid transparent;
+	border-bottom:30px solid transparent;
+	border-left:30px solid transparent;
+	
+}
+.cir{
+	background-color:red;
+	width:50px;
+	height:50px;
+	border-radius:50px;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
